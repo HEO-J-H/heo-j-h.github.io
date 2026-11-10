@@ -1,5 +1,24 @@
 User-agent: *
 Allow: /
+
+# AI 검색·답변 서비스도 읽어 가도 됩니다 (구글 AI 개요·ChatGPT 검색·Claude·Perplexity 등이 사이트를 소개할 수 있게)
+User-agent: Google-Extended
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
 Sitemap: https://heo-j-h.github.io/sitemap.xml
 Sitemap: https://heo-j-h.github.io/3dflowhub/sitemap.xml
 Sitemap: https://heo-j-h.github.io/life-after-60/sitemap.xml
