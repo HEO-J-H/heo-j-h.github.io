@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>HEO-J-H — 3D·은퇴 설계 도구 모음</title>
+<title>HEO-J-H — 3D 학습·제작 도구와 은퇴 설계 계산기</title>
 <meta name="description" content="3D/CG 소식과 기초 가이드(3dflowhub), 은퇴 후 월별 현금흐름 계산기(life-after-60), 사진으로 3D 만들기(Pix2Poly).">
 <meta name="naver-site-verification" content="0944cd52b3fba070442b40f5cc5a4fbe539992c1">
 <meta name="google-adsense-account" content="ca-pub-4980394869440139">
@@ -17,29 +17,82 @@
 :root{--bg:#f5f5f7;--card:#fff;--line:rgba(0,0,0,.1);--text:#1d1d1f;--muted:#6e6e73;--accent:#0a66ff}
 @media (prefers-color-scheme:dark){:root{--bg:#000;--card:#1c1c1e;--line:rgba(255,255,255,.12);--text:#f5f5f7;--muted:#a1a1a6;--accent:#4c8dff}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif}
-main{max-width:880px;margin:0 auto;padding:48px 16px}
-h1{margin:0 0 6px;font-size:28px;letter-spacing:-.02em}
-.lead{margin:0 0 28px;color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
-a.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;color:inherit;text-decoration:none;min-height:44px}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif}
+main{max-width:920px;margin:0 auto;padding:48px 16px}
+h1{margin:0 0 8px;font-size:30px;letter-spacing:-.02em}
+h2{font-size:22px;margin:40px 0 10px;letter-spacing:-.01em}
+h3{font-size:17px;margin:22px 0 6px}
+.lead{margin:0 0 28px;color:var(--muted);font-size:17px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+a.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;color:inherit;text-decoration:none}
 a.card:hover,a.card:focus-visible{border-color:var(--accent)}
-.card b{display:block;font-size:19px;margin-bottom:6px}
-.card span{color:var(--muted);font-size:15px}
+.card b{display:block;font-size:19px;margin-bottom:6px}.card span{color:var(--muted);font-size:15px}
+section.site{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:6px 22px 18px;margin-top:18px}
+ul.links{padding-left:18px;margin:6px 0}ul.links li{margin:4px 0}ul.links a{color:var(--accent);text-decoration:none}
+ul.links a:hover{text-decoration:underline}ul.links b{color:var(--text);font-weight:600}
+p{margin:8px 0}.muted{color:var(--muted)}
 :focus-visible{outline:3px solid var(--accent);outline-offset:2px}
-footer{margin-top:32px;color:var(--muted);font-size:13px}
+footer{margin-top:40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:16px}
+footer a{color:var(--accent)}
 </style>
 </head>
 <body>
 <main>
-  <h1>HEO-J-H</h1>
-  <p class="lead">3D 작업자와 은퇴를 준비하는 분을 위한 무료 도구 모음입니다.</p>
+  <h1>HEO-J-H — 3D 학습·제작 도구와 은퇴 설계 계산기</h1>
+  <p class="lead">3D 를 배우는 분, 사진으로 3D 를 만들고 싶은 분, 은퇴 후 생활비를 미리 계산해 보고 싶은 분을 위한 무료 사이트 세 곳입니다.
+  모두 한국어로 운영하고, 회원 가입이나 개인정보 입력 없이 쓸 수 있습니다.</p>
   <div class="grid">
-    <a class="card" href="/3dflowhub/"><b>🧊 3dflowhub</b><span>3D·CG 소식, 툴별 기초 가이드, 실행 검증된 스크립트</span></a>
-    <a class="card" href="/life-after-60/"><b>💰 은퇴 현금흐름 계산기</b><span>국민연금·기초연금·연금계좌·ISA·건강보험료·세금을 반영한 월별 계산 (입력값 저장 안 함)</span></a>
-    <a class="card" href="/Pix2Poly/"><b>🧱 Pix2Poly</b><span>사진 1장·여러 각도·사이트 이미지로 3D 메시와 PBR 텍스처 만들기</span></a>
+    <a class="card" href="/3dflowhub/"><b>🧊 3dflowhub</b><span>3ds Max·Blender·Maya·Houdini·언리얼 등 툴별 기초 가이드, 작업별 툴 비교, 오류 해결, 공모전, AI 3D 레이더</span></a>
+    <a class="card" href="/life-after-60/"><b>💰 은퇴 현금흐름 계산기</b><span>국민연금·기초연금·연금계좌·ISA·건강보험료·세금을 반영한 월별 생활비 계산 — 입력값은 내 브라우저에만</span></a>
+    <a class="card" href="/Pix2Poly/"><b>🧱 Pix2Poly</b><span>사진 1장으로 부조 3D 메시와 PBR 텍스처, 여러 각도 사진으로 하나의 3D — 설치 없이 브라우저에서</span></a>
   </div>
-  <footer>각 사이트는 GitHub 에서 오픈소스로 운영됩니다 · <a href="https://github.com/HEO-J-H" style="color:var(--accent)">GitHub</a></footer>
+
+  <section class="site">
+    <h2>🧊 3dflowhub — 3D 툴을 기초부터</h2>
+    <p>3D 툴의 기능을 하나씩, <b>영상과 따라 하기 단계</b>로 익히는 한국어 학습 사이트입니다. 각 가이드는 기본 사용법 아래에
+    <b>옵션 전체 표, 값을 바꿔 가며 실제로 렌더한 비교 그림(Blender), 응용 순서, 증상별 문제 해결</b>까지 이어지고, 공식 문서를 근거로 씁니다.
+    틀린 내용은 페이지마다 있는 제보 버튼과 '도움이 됐나요?' 반응으로 고쳐 나갑니다.</p>
+    <h3>툴별 대표 가이드</h3>
+    <ul class="links"><li><a href="/3dflowhub/learn/blender-bevel-modifier-42a1/"><b>Blender</b> Bevel — 모서리 둥글게 (값 비교 렌더 포함)</a></li><li><a href="/3dflowhub/learn/3ds-max-edit-poly-modifier-5de9/"><b>3ds Max</b> Edit Poly — 폴리곤 모델링의 기본</a></li><li><a href="/3dflowhub/learn/maya-extrude-and-bevel-bf12/"><b>Maya</b> Extrude·Bevel — 폴리곤 모델링 기본기</a></li><li><a href="/3dflowhub/learn/houdini-scatter-sop-949e/"><b>Houdini</b> Scatter — 표면에 점 뿌리기</a></li><li><a href="/3dflowhub/learn/zbrush-zremesher-2c79/"><b>ZBrush</b> ZRemesher — 자동 리토폴로지</a></li><li><a href="/3dflowhub/learn/unreal-engine-nanite-virtualized-geometry-49bb/"><b>Unreal Engine</b> Nanite — 고폴리곤을 그대로</a></li><li><a href="/3dflowhub/learn/substance-3d-substance-painter-baking-mesh-maps-cfad/"><b>Substance 3D</b> Painter 맵 Baking</a></li><li><a href="/3dflowhub/learn/pixyz-studio-what-is-pixyz-studio-bd05/"><b>Pixyz Studio</b> CAD 를 실시간 3D 로 바꾸는 도구</a></li><li><a href="/3dflowhub/learn/nvidia-omniverse-what-is-nvidia-omniverse-7dba/"><b>NVIDIA Omniverse</b> 무엇을 하는 플랫폼인가</a></li></ul>
+    <p class="muted">전체 800여 개: <a href="/3dflowhub/learn/">기초 가이드 전체 보기</a></p>
+    <h3>같은 작업, 툴마다 어떻게 — 툴 비교</h3>
+    <ul class="links"><li><a href="/3dflowhub/compare/fbx-export/">FBX 내보내기 (게임 엔진용)</a></li><li><a href="/3dflowhub/compare/uv-unwrap/">UV 펴기</a></li><li><a href="/3dflowhub/compare/texture-bake/">텍스처 베이크 (노멀·AO)</a></li><li><a href="/3dflowhub/compare/retopology/">리토폴로지</a></li><li><a href="/3dflowhub/compare/rigging/">캐릭터 리깅 기본</a></li><li><a href="/3dflowhub/compare/cad-to-realtime/">CAD 데이터를 실시간 3D 로</a></li></ul>
+    <h3>그 밖에</h3>
+    <ul class="links">
+      <li><a href="/3dflowhub/fix/">오류 해결</a> — 오류 메시지 원문으로 찾는 원인과 해결 순서 (Blender 는 오류 재현·해결 코드를 실제 실행해 확인)</li>
+      <li><a href="/3dflowhub/changes/">버전별 바뀐 점</a> — 공식 릴리스 노트를 근거로 작업자에게 달라지는 것</li>
+      <li><a href="/3dflowhub/events/">공모전·게임 잼</a> — 국내 3D·게임 공모전, 해외 게임 잼·3D 챌린지, 컨퍼런스 일정 (마감 임박 순)</li>
+      <li><a href="/3dflowhub/radar/">AI 3D 레이더</a> — 허깅페이스·GitHub 의 3D 생성 AI 모델·데모·오픈소스, 상업 사용 가능 여부</li>
+      <li><a href="/3dflowhub/assets/">무료 에셋</a> — 상업적으로 써도 되는 CC0 텍스처·HDRI·3D 모델</li>
+    </ul>
+  </section>
+
+  <section class="site">
+    <h2>💰 은퇴 현금흐름 계산기 (life-after-60)</h2>
+    <p>은퇴 후 매달 들어오고 나가는 돈을 나이별로 계산합니다. 국민연금(수령 나이 앞당기기·늦추기), 기초연금, 퇴직금(일시금·연금),
+    연금저축·IRP, ISA, 건강보험료, 연금소득세를 함께 반영해 <b>몇 살에 돈이 모자라는지</b>를 그래프와 표로 보여 줍니다.
+    계산은 모두 이용자의 브라우저 안에서만 이루어지고, 입력한 금액은 서버로 보내지 않습니다. 세법·연금 기준이 바뀌면 기준일과 함께 반영합니다.</p>
+    <ul class="links"><li><a href="/life-after-60/">계산기 열기</a> — 50~60대가 읽기 쉬운 큰 글씨, 휴대폰에서도 사용 가능</li></ul>
+  </section>
+
+  <section class="site">
+    <h2>🧱 Pix2Poly — 사진으로 3D 만들기</h2>
+    <p>사진 한 장의 밝기를 높이로 바꿔 <b>부조(浮彫) 3D 메시와 PBR 텍스처 5종</b>(Base Color·Normal·Roughness·Metallic·AO)을 만들고,
+    GLB·OBJ 로 내려받아 Blender·Unity·Unreal 에서 바로 쓸 수 있습니다. 같은 물체를 여러 각도에서 찍은 사진으로는 하나의 입체 3D 를 만듭니다.
+    사진 1장 방식은 브라우저 안에서만 처리되고, 내 PC 버전(오픈소스)은 사진측량(COLMAP)·배경 지우기까지 지원합니다.</p>
+    <ul class="links"><li><a href="/Pix2Poly/">바로 써 보기</a> — 설치 없음 · <a href="https://github.com/HEO-J-H/Pix2Poly">소스 코드(GitHub)</a></li></ul>
+  </section>
+
+  <h2>운영 방식</h2>
+  <p>한 사람이 기획·운영하고, 자료 정리와 초안 작성에는 AI 를 씁니다. 3dflowhub 의 가이드는 공식 문서를 근거로 만들고,
+  Blender 기능은 실제로 실행해 그림과 오류 해결 코드를 확인합니다. 해외 소식은 원문 링크와 함께 핵심만 소개하고 해설·실습 안내를 덧붙입니다.
+  세 사이트 모두 GitHub 에서 오픈소스로 공개되어 있습니다.</p>
+
+  <footer>
+    <a href="/3dflowhub/about/">소개</a> · <a href="/3dflowhub/contact/">문의</a> · <a href="/3dflowhub/privacy/">개인정보처리방침</a> ·
+    <a href="https://github.com/HEO-J-H">GitHub</a><br>
+    방문 통계는 쿠키 없는 GoatCounter 로 집계하며, 광고는 Google AdSense 를 사용할 수 있습니다.
+  </footer>
 </main>
 </body>
 </html>
