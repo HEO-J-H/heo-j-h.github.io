@@ -19,7 +19,7 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://3dflowhub.kr/sitemap.xml
-Sitemap: https://3dflowhub.kr/3dflowhub/sitemap.xml
-Sitemap: https://3dflowhub.kr/life-after-60/sitemap.xml
-Sitemap: https://3dflowhub.kr/Pix2Poly/sitemap.xml
+Sitemap: https://heo-j-h.github.io/sitemap.xml
+Sitemap: https://heo-j-h.github.io/3dflowhub/sitemap.xml
+Sitemap: https://heo-j-h.github.io/life-after-60/sitemap.xml
+Sitemap: https://heo-j-h.github.io/Pix2Poly/sitemap.xml
